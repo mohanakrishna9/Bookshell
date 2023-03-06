@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Babylonica&family=Montserrat&family=Tourney&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/about us.ico">
+  </head>
+  <body>
+    <div id="container-fluid">
+      <header>About Us</header>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <h1>
+                  <img
+                    src="images/download.webp"
+                    alt="logo"
+                    width="315"
+                    height="380"
+                  />
+                </h1>
+              </div>
+              <div class="back">
+                <p id="backtext">Civilone is a website designed to offer valuable information on civil engineering. This platform is unique in the sense that it has no single owner, but instead, it serves as a hub for civil engineers. The site's primary goal is to provide comprehensive information and resources that can help individuals in the field of civil engineering to enhance their knowledge, skills, and expertise.The creators of Civilone are continually working towards developing more features that can further enhance the site's functionality and user experience.With the upcoming addition of new features, Civilone aims to become a top resource for all things in civil engineering.
+                <img src="images/signature.png" alt="signature of owner" width="150" height="55"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="textbox"><p>Click on our logo</p></div>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+      /* Set up the container */
+      .flip-container {
+        perspective: 1000px;
+        margin: 50px auto;
+        width: 350px;
+        height: 400px;
+      }
+
+      /* Set up the flipper */
+      .flipper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+
+      /* Set up the front and back sides */
+      .front,
+      .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      /* Set up the front side */
+      .front {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Set up the back side */
+      .back {
+        background-color: #2ecc71;
+        color: #fff;
+        transform: rotateY(-180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:3px solid orangered;
+        font-family: "Montserrat", sans-serif;
+        border-radius:7px;
+      }
+
+      /* Set up the flip animation */
+      .flip-container:hover .flipper {
+        transform: rotateY(180deg);
+      }
+      #textbox {
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        text-shadow: 2px 2px 4px rgba(233, 229, 229, 0.5);
+      }
+      #container-fluid {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+      }
+      #backtext{
+        font-family: "Montserrat", sans-serif; 
+        font-size:14px;
+        text-align: justify;
+        justify-content:flex-start;
+        color:black;
+        padding:12px;
+      }
+      strong{
+        float:right;
+      }
+      img{
+        margin:0;
+        padding: 0;
+        vertical-align:bottom;
+        float: right;
+      }
+    </style>
+  </body>
+</html>
